@@ -25,17 +25,19 @@ It's mainly pyproject files referencing themselves
 
 Only the server:
 
-    pip install https://github.com/elor/multipy[server]
+    pip install git+https://github.com/elor/multipy#egg=multipy[server]
+    - or locally -
+    pip install /path/to/multipy[server]
 
 Only the client:
 
-    pip install https://github.com/elor/multipy[client]
+    pip install git+https://github.com/elor/multipy#egg=multipy[client]
 
 Both:
 
-    pip install https://github.com/elor/multipy[all]
+    pip install git+https://github.com/elor/multipy#egg=multipy[all]
     - or -
-    pip install https://github.com/elor/multipy[all]
+    pip install git+https://github.com/elor/multipy#egg=multipy[all]
 
 ## Usage
 
