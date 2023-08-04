@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "multipy-common"
+version = "0.1.0"
+description = ""
+authors = ["Erik E. Lorenz <erik@tuvero.de>"]
+readme = "README.md"
+packages = [{include = "multipy_common"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.21.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "multipy-client"
+version = "0.1.0"
+description = ""
+authors = ["Erik E. Lorenz <erik@tuvero.de>"]
+readme = "README.md"
+packages = [{include = "multipy_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+multipy_common = {path = "../multipy_common"}
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+multipy_client = "multipy_client.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
